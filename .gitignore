@@ -19,6 +19,7 @@ coverage/
 # Environment variables
 .env
 .env.local
+serviceAccountKey.json
 
 # Temporary files
 .DS_Store

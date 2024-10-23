@@ -7,7 +7,7 @@ var serviceAccount = require("../serviceAccountKey.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://myparktu-default-rtdb.asia-southeast1.firebasedatabase.app"
+  databaseURL: process.env.DB_Firebase
 });
 const db = admin.firestore();
 
